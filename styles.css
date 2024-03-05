@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    padding: 1rem;
+    background-image: linear-gradient(to right top, #f9f2fc, #f8f4fd, #f8f6fe, #f8f7ff, #f8f9ff, #f7f9ff, #f7faff, #f6faff, #f3fafe, #f0fafd, #eef9fb, #ecf9f9);
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif; /* Consistent typography */
+}
+.form-control {
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right top, #3e7020, #386f21, #326e21, #2b6d22, #246c23, #1f6923, #1a6623, #156323, #135e22, #105922, #0f5421, #0d4f20);}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.card {
+    transition: transform 0.2s; /* Smooth transition for card hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+
+
+/* Responsive design for small devices */
+@media (max-width: 768px) {
+    .header, .footer {
+        text-align: center;
+    }
+}
+
+/* A
+
+/* Responsive image styles */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Custom styles for the navigation bar */
+.navbar {
+    padding: 1rem;
+    background-image: linear-gradient(to right top, #315d8b, #345b88, #375985, #3a5781, #3c557e, #375880, #335c81, #2f5f82, #266884, #247084, #2c7882, #397f7f);    text-align: center;
+}
+
+/* Add more custom styles as needed */
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Add more styling as needed */

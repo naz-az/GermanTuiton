@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Become a Tutor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header" class="header"></header>
+
+    <main class="container mt-5">
+        <h1 class="text-center">Become a Tutor</h1>
+        <p class="lead text-center">Join our community of language tutors, share your knowledge, and earn while teaching from the comfort of your home.</p>
+
+        <div class="become-tutor-form">
+            <h2>Sign Up</h2>
+            <form action="/submit-tutor-application" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Languages:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="english" name="languages" value="English">
+                        <label class="form-check-label" for="english">English</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="german" name="languages" value="German">
+                        <label class="form-check-label" for="german">German</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="french" name="languages" value="French">
+                        <label class="form-check-label" for="french">French</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="korean" name="languages" value="Korean">
+                        <label class="form-check-label" for="korean">Korean</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="others" name="languages" value="Others">
+                        <label class="form-check-label" for="others">Others</label>
+                    </div>
+                    <div id="otherLanguageDiv" style="display:none;">
+                        <label for="otherLanguage">Please specify:</label>
+                        <input type="text" class="form-control" id="otherLanguage" name="otherLanguage">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" class="form-control" id="experience" name="experience" placeholder="5" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="bio">Short Bio:</label>
+                    <textarea class="form-control" id="bio" name="bio" rows="3" placeholder="Tell us about yourself..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </main>
+
+   <footer id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+
+            const othersCheckbox = document.getElementById('others');
+            const otherLanguageDiv = document.getElementById('otherLanguageDiv');
+
+            othersCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    otherLanguageDiv.style.display = 'block';
+                } else {
+                    otherLanguageDiv.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

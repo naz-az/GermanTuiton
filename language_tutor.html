@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Tutors</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container mt-5">
+        <h1>Language Tutors</h1>
+        <div class="tutor-section">
+            <h2>English Tutors</h2>
+            <div class="tutor">
+<img src="images/uk.jpg" alt="English Flag" style="width: 250px; height: 150px;">
+                <p>John Doe</p>
+            </div>
+            <!-- Add more tutors as needed -->
+        </div>
+        
+        <div class="tutor-section">
+            <h2>German Tutors</h2>
+            <div class="tutor">
+                <img src="images/german.jpg" alt="German Flag" style="width: 250px; height: 150px;">
+                <p>Jane Smith</p>
+            </div>
+            <!-- Add more tutors as needed -->
+        </div>
+        
+        <div class="tutor-section">
+            <h2>French Tutors</h2>
+            <div class="tutor">
+                <img src="images/france.jpg" alt="French Flag" style="width: 250px; height: 150px;">
+                                <p>Robert Pires</p>
+
+            </div>
+            <!-- Add more tutors as needed -->
+        </div>
+
+        <div class="tutor-section">
+            <h2>Korean Tutors</h2>
+            <div class="tutor">
+                <img src="images/korean.jpg" alt="Korean Flag" style="width: 250px; height: 150px;">
+                <p>Kim Min-jun</p>
+            </div>
+            <!-- Add more tutors as needed -->
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

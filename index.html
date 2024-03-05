@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Tutor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header"></header>
+    
+    <main class="container mt-5">
+        <section class="text-center">
+            <h2>About Us</h2>
+            <p>Welcome to the best language tutor platform...</p>
+        </section>
+        
+        <section class="mt-5">
+            <h1>Language Tutors</h1>
+            <div class="row">
+                <!-- English Tutor -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/uk.jpg" alt="English Flag">
+                        <div class="card-body">
+                            <h5 class="card-title">English</h5>
+                            <p class="card-text">Some description about John Doe.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- German Tutor -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/german.jpg" alt="German Flag">
+                        <div class="card-body">
+                            <h5 class="card-title">German</h5>
+                            <p class="card-text">Some description about Jane Smith.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- French Tutor -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/france.jpg" alt="French Flag">
+                        <div class="card-body">
+                            <h5 class="card-title">French</h5>
+                            <p class="card-text">Some description about Robert Pires.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- French Tutor -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/korean.jpg" alt="Korean Flag">
+                        <div class="card-body">
+                            <h5 class="card-title">Korean</h5>
+                            <p class="card-text">Some description about Robert Pires.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more tutor cards as needed -->
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer"></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>
