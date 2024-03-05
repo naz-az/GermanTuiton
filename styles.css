@@ -54,7 +54,15 @@ h2, h3, h4, h5, h6 {
     transform: scale(1.05); /* Slight scale on hover */
 }
 
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
 
+.card-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
 /* Responsive design for small devices */
 @media (max-width: 768px) {
@@ -67,9 +75,13 @@ h2, h3, h4, h5, h6 {
 
 /* Responsive image styles */
 .card-img-top {
-    width: 100%;
-    height: auto;
-}
+    width: 250px !important;  /* Force the width */
+    height: 120px !important; /* Force the height */
+    object-fit: cover; 
+    display: block;           /* Makes the margin auto applicable */
+    margin: auto;                  /* Maintain aspect ratio while covering the area */
+  }
+  
 
 /* Custom styles for the navigation bar */
 .navbar {
@@ -90,4 +102,22 @@ nav ul li {
     margin-right: 10px;
 }
 
+.tutor-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top; /* Aligns the top part of the image with the container's top edge */
+ 
+    margin-top: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .tutor-image {
+        width: 80px;
+        height: 80px;
+
+    }
+}
 /* Add more styling as needed */
