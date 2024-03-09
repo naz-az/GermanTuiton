@@ -4,67 +4,53 @@
     <title>Language Tutor</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header id="header"></header>
     
     <main class="container mt-5">
         <section class="text-center">
-            <h2>About Us</h2>
-            <p>Welcome to the best language tutor platform...</p>
-        </section>
-        
-        <section class="mt-5">
-        
-            <h1>Language Tutors</h1>
-            <div class="row">
-                <!-- English Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/uk.jpg" alt="English Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">English</h5>
-                            <p class="card-text">Some description about John Doe.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- German Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/german.jpg" alt="German Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">German</h5>
-                            <p class="card-text">Some description about Jane Smith.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- French Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/france.jpg" alt="French Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">French</h5>
-                            <p class="card-text">Some description about Robert Pires.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- French Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/korean.jpg" alt="Korean Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">Korean</h5>
-                            <p class="card-text">Some description about Robert Pires.</p>
-                        </div>
-                    </div>
-                </div>
+            <img class="background-top" src="images/title1.png" alt="background1">
+            <h2>Welcome to Eden Language Centre</h2>
+            <p>Where kids aged 10-16 embark on an affordable and effective language learning journey! From French to Mandarin, our expert teachers ignite passion while keeping costs low. Join us and let your child explore the world through language!</p>
+            <button class="btn btn-primary">Call now - [Phone Number]</button>
+            <button class="btn btn-secondary">Email now - [Email Address]</button>
+<i class="fab fa-whatsapp whatsapp-icon"></i>
 
-                <!-- Add more tutor cards as needed -->
-            </div>
+
+
+            <div class="dropdown">
+    <h3 class="dropdown-header">Why should kids learn a new language? <i class="fa fa-chevron-down"></i></h3>
+    <div class="dropdown-content">
+        <p>Besides the usual reasons adults learn a new language (career opportunities or romance) there are plenty of other benefits for kids to learn a new language.</p>
+        <ul>
+            <li>Improved memory: Learning a foreign language involves memorizing vocabulary and grammar, which enhances overall memory function. According to a study published in the journal "Neuropsychology," bilingualism has been linked to better memory performance (Bialystok et al., 2004).</li>
+            <li>Problem-solving skills: Language learning stimulates critical thinking and problem-solving abilities. Research published in the journal "Psychological Science" suggests that bilingual individuals excel in tasks that require cognitive control and problem-solving (Green & Abutalebi, 2013).</li>
+            <li>Increased creativity: Language learners often find creative ways to express themselves. Studies, such as one published in "Frontiers in Psychology," have shown that bilingualism is associated with greater cognitive flexibility and divergent thinking, key components of creativity (Kharkhurin, 2012).</li>
+            <li>Learn to overcome obstacles</li>
+            <li>Discipline: Let's face it,</li>
+        </ul>
+    </div>
+</div>
+
+            <div class="dropdown">
+    <h3 class="dropdown-header">Why start early<i class="fa fa-chevron-down"></i></h3>
+    <div class="dropdown-content">
+        <ul>
+                <li>Kids get the opportunity to explore, do you (parents) still remember the foreign language you learnt years ago at school or at university. Chances are you won't remember much of it. Starting early gives children to explore their interests</li>
+                <li>Children are just better at learning stuff</li>
+                <li>Longer time to learn a language: The usual pathway to study in a university overseas will be to study a language intensively for 1-2 years after SPM. Starting early gives gives them the opportunity to learn at a slower pace and enjoy the process more than just cramming things in your head to pass that next exam</li>
+                <li>Save costs: Pre university foreign language courses can be quite heavy for students to bear in a short space of time. We help reduce these costs greatly and help parents space out the costs, so it will not feel as much a burden</li>
+        </ul>
+    </div>
+</div>
+
+
         </section>
     </main>
+    
     
     <footer id="footer"></footer>
     
@@ -72,6 +58,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const headers = document.querySelectorAll('.dropdown-header');
+
+    headers.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('.fa');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+                this.classList.remove('active');
+            } else {
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(-180deg)';
+                this.classList.add('active');
+            }
+        });
+    });
+});
+
+    </script>
+
+        <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             fetch('partials/header.html')
                 .then(response => response.text())

@@ -5,25 +5,42 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <header id="header"></header>
 
     <main class="container mt-5">
-        <h1>About Us</h1>
-            <h2>Our Mission</h2>
-            <p>At Language Tutor Malaysia, our mission is to bridge cultural gaps and foster global understanding through language learning. We believe that language is more than just words and grammar; it's a window into the world's diverse cultures and perspectives.</p>
-        </section>
-        
+        <div class="card info-card">
+            <div class="card-body">
+                <h1>About Us</h1>
+                <section>
+                    <h2>Our Mission</h2>
+                    <p>At Language Tutor Malaysia, our mission is to bridge cultural gaps and foster global understanding through language learning. We believe that language is more than just words and grammar; it's a window into the world's diverse cultures and perspectives.</p>
+                </section>
+
+                <section>
+                    <h2>Contact Us</h2>
+                    <p><strong>Address:</strong> 123, Jalan Bukit Bintang, 55100 Kuala Lumpur, Malaysia</p>
+                    <p><strong>Email:</strong> contact@languagetutormalaysia.com</p>
+                    <p><strong>Phone:</strong> +60 3-234 5678</p>
+                </section>
+
+                <div id="map" style="height: 400px; width: 100%;"></div>
+
+<div class="connect-section mt-4">
+  <h2>Connect with Us</h2>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/yourfacebookpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/yourinstagrampage" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</div>
 
 
-            <h2>Contact Us</h2>
-            <p><strong>Address:</strong> 123, Jalan Bukit Bintang, 55100 Kuala Lumpur, Malaysia</p>
-            <p><strong>Email:</strong> contact@languagetutormalaysia.com</p>
-            <p><strong>Phone:</strong> +60 3-234 5678</p>
-
-            <div id="map" style="height: 400px; width: 100%;"></div>
-        </section>
+            </div>
+        </div>
     </main>
 
     <footer id="footer"></footer>
@@ -32,6 +49,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         fetch('partials/header.html')

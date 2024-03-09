@@ -103,8 +103,8 @@ nav ul li {
 }
 
 .tutor-image {
-    width: 60px;
-    height: 60px;
+    width: 100%;  /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
     object-fit: cover;
     object-position: top; /* Aligns the top part of the image with the container's top edge */
@@ -112,6 +112,115 @@ nav ul li {
     margin-top: 10px;
 }
 
+/* Image styles */
+.background-top {
+    width: 100%;     /* Width is 100% to be responsive */
+    height: 500px;   /* Fixed height */
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.whatsapp-icon {
+    color: #25D366; /* WhatsApp green color */
+    font-size: 30px; /* Adjust the size as needed */
+}
+
+.dropdown-header {
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px; /* Increase font size; adjust the value as needed */
+
+}
+
+.dropdown-header .fa {
+    margin-left: 100px; /* Add left margin to the icon */
+
+}
+
+.dropdown-header.active {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px; /* Add some padding for better text alignment */
+}
+
+
+.fa {
+    transition: transform 0.3s;
+}
+
+.blog-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.blog-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-content {
+    padding: 2em;
+}
+
+.info-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+}
+
+.info-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.connect-section {
+    margin-top: 20px; /* Adjust spacing as needed */
+    text-align: center;
+    font-size: 12px;
+
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 24px;
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Facebook blue on hover */
+  }
+  
+  .social-icons a:hover .fab.fa-instagram {
+    color: #e4405f; /* Instagram gradient color */
+  } 
+  
+  .social-icons a:hover .fab.fa-whatsapp {
+    color: #25d366; /* WhatsApp green color */
+  }
+  
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .tutor-image {
