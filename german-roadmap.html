@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixology - Building Digital Product</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" />
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+<script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"></script>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+      <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Eden Language Centre</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Eden Language Centre</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="courses.html" class="navbar-link" data-nav-link
+                >Courses</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="about-us.html" class="navbar-link" data-nav-link
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+
+
+          <h2 class="h2 section-title text-center">
+            Language Course: <span style="color: #677483">German</span>
+
+          </h2>
+
+     <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" id="feature" aria-label="feature">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="./assets/images/roadmap.jpg"
+                width="582"
+                height="885"
+                loading="lazy"
+                alt="feature banner"
+                class="w-150"
+              />
+            </figure>
+
+        <div class="feature-content">
+              <p class="section-subtitle has-before">Roadmap</p>
+
+              <h2 class="h2 section-title">
+            German Course Pathway
+              </h2>
+
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 174, 77%, 50%">
+                      <ion-icon
+                        name="color-wand-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">A1.1</h3>
+
+                      <p class="card-text">
+A1.1 is described as the “Minimal assessable level” of language according to the CEFR. It is a 6-month course that meets once a week.                      </p>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 35, 97%, 63%">
+                      <ion-icon
+                        name="diamond-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">A1.2</h3>
+
+                      <p class="card-text">
+A1.2 is described as the “2nd phase” of the A1 level. It is also a 6-month course, but it includes an additional month of intensive preparation for the A1 exam.                      </p>
+                    </div>
+                  </div>
+                </li>
+
+
+                                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 326, 57%, 48%">
+                      <ion-icon
+                        name="rocket-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">A1 Exam</h3>
+
+                      <p class="card-text">
+The A1 exam is a certified language test that places students in the “Basic User” category. Learners at this level can understand sentences, communicate in simple and routine tasks, and describe in simple terms their immediate environment or needs. Approximately it takes between 80 and 200 hours of study to reach this level.                      </p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+           
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">Eden Language Centre</p>
+
+            <p class="footer-text">
+At Eden Language Centre, we make learning foreign language simple and enjoyable with our approachable, skilled tutors.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/edenlanguagecentre/" class="social-link" style="--color: 223, 98%, 57%" target="_blank">
+                  <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com" class="social-link" style="--color: 326, 57%, 48%" target="_blank">
+                  <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course!" class="social-link" target="_blank">
+                  <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="courses.html" class="footer-link">Courses</a>
+            </li>
+
+            <li>
+              <a href="blog.html" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="about-us.html" class="footer-link">About Us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Eden Language Centre
+          </p>
+
+
+
+        </div>
+      </div>
+    </footer>
+
+
+
+<!-- WhatsApp Button for a Malaysian number -->
+<a href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course!" class="whatsapp-btn" aria-label="WhatsApp" target="_blank">
+  <ion-icon name="logo-whatsapp"></ion-icon>
+</a>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+
+        var map = L.map('map').setView([3.1478, 101.7081], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var marker = L.marker([3.1478, 101.7081]).addTo(map);
+        marker.bindPopup("<b>Language Tutor Malaysia</b><br>123, Jalan Bukit Bintang").openPopup();
+
+        // Add click event listener to the map
+        map.on('click', function(e) {
+            if (map.getZoom() < map.getMaxZoom()) {
+                map.setView(e.latlng, map.getZoom() + 2);
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>

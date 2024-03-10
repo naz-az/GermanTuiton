@@ -1,99 +1,1057 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Language Tutor</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixology - Building Digital Product</title>
 
-</head>
-<body>
-    <header id="header"></header>
-    
-    <main class="container mt-5">
-        <section class="text-center">
-            <img class="background-top" src="images/title1.png" alt="background1">
-            <h2>Welcome to Eden Language Centre</h2>
-            <p>Where kids aged 10-16 embark on an affordable and effective language learning journey! From French to Mandarin, our expert teachers ignite passion while keeping costs low. Join us and let your child explore the world through language!</p>
-            <button class="btn btn-primary">Call now - [Phone Number]</button>
-            <button class="btn btn-secondary">Email now - [Email Address]</button>
-<i class="fab fa-whatsapp whatsapp-icon"></i>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Eden Language Centre</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Eden Language Centre</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="courses.html" class="navbar-link" data-nav-link
+                >Courses</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="about-us.html" class="navbar-link" data-nav-link
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
 
 
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
 
-            <div class="dropdown">
-    <h3 class="dropdown-header">Why should kids learn a new language? <i class="fa fa-chevron-down"></i></h3>
-    <div class="dropdown-content">
-        <p>Besides the usual reasons adults learn a new language (career opportunities or romance) there are plenty of other benefits for kids to learn a new language.</p>
-        <ul>
-            <li>Improved memory: Learning a foreign language involves memorizing vocabulary and grammar, which enhances overall memory function. According to a study published in the journal "Neuropsychology," bilingualism has been linked to better memory performance (Bialystok et al., 2004).</li>
-            <li>Problem-solving skills: Language learning stimulates critical thinking and problem-solving abilities. Research published in the journal "Psychological Science" suggests that bilingual individuals excel in tasks that require cognitive control and problem-solving (Green & Abutalebi, 2013).</li>
-            <li>Increased creativity: Language learners often find creative ways to express themselves. Studies, such as one published in "Frontiers in Psychology," have shown that bilingualism is associated with greater cognitive flexibility and divergent thinking, key components of creativity (Kharkhurin, 2012).</li>
-            <li>Learn to overcome obstacles</li>
-            <li>Discipline: Let's face it,</li>
-        </ul>
-    </div>
-</div>
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
 
-            <div class="dropdown">
-    <h3 class="dropdown-header">Why start early<i class="fa fa-chevron-down"></i></h3>
-    <div class="dropdown-content">
-        <ul>
-                <li>Kids get the opportunity to explore, do you (parents) still remember the foreign language you learnt years ago at school or at university. Chances are you won't remember much of it. Starting early gives children to explore their interests</li>
-                <li>Children are just better at learning stuff</li>
-                <li>Longer time to learn a language: The usual pathway to study in a university overseas will be to study a language intensively for 1-2 years after SPM. Starting early gives gives them the opportunity to learn at a slower pace and enjoy the process more than just cramming things in your head to pass that next exam</li>
-                <li>Save costs: Pre university foreign language courses can be quite heavy for students to bear in a short space of time. We help reduce these costs greatly and help parents space out the costs, so it will not feel as much a burden</li>
-        </ul>
-    </div>
-</div>
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Unlock New
+                <span style="color: #677483">Languages.</span>
+              </h1>
+
+              <p class="hero-text">
+                Welcome to Eden Language Centre, where kids aged 10-16 embark on
+                an affordable and effective language learning journey! From
+                French to Mandarin, our expert teachers ignite passion while
+                keeping costs low. Join us and let your child explore the world
+                through language!
+              </p>
 
 
+              <div class="wrapper">
+                <a href="#" class="btn btn-primary has-before has-after"
+                  >Call Now</a
+                >
+
+              <!-- Updated anchor tag with mailto: -->
+              <a href="mailto:edenlanguage@example.com" class="hero-btn" aria-label="pixology promo">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <span class="span">E-Mail Now</span>
+              </a>
+
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/edenlanguagecentre/"
+                    class="social-link"
+                    style="--color: hsl(241, 77%, 63%)"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+
+                    <span class="span">Facebook</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(0, 100%, 50%)"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                    <span class="span">Instagram</span>
+                  </a>
+                </li>
+
+<li>
+  <a
+    href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course"
+    class="social-link"
+    style="--color: hsl(116, 100%, 50%)"
+    target="_blank"
+  >
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    <span class="span">Whatsapp</span>
+  </a>
+</li>
+
+              </ul>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
         </section>
-    </main>
-    
-    
-    <footer id="footer"></footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const headers = document.querySelectorAll('.dropdown-header');
 
-    headers.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('.fa');
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-                icon.style.transform = 'rotate(0deg)';
-                this.classList.remove('active');
-            } else {
-                content.style.display = 'block';
-                icon.style.transform = 'rotate(-180deg)';
-                this.classList.add('active');
-            }
+        <!-- 
+        - #SERVICE
+      -->
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Our Courses</p>
+
+            <h2 class="h2 section-title text-center">
+              Discover Our Variety of
+              <span style="color: #677483">Foreign Language Courses </span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card" style="--color: 35, 100%, 29%">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div class="card-icon">
+    <img
+      src="./assets/images/ger.png"
+      width="120"
+      height="120"
+      loading="lazy"
+      alt="service icon"
+    />
+  </div>
+</div>
+
+
+                  <h3 class="h3">
+                    <a href="german-roadmap.html" class="card-title">German</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 174, 77%, 50%">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div class="card-icon">
+    <img
+      src="./assets/images/fran.png"
+      width="120"
+      height="120"
+      loading="lazy"
+      alt="service icon"
+    />
+  </div>
+</div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">French</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/spai.png"
+                      width="120"
+                      height="120"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Spanish</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 343, 98%, 60%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/kore.png"
+                      width="120"
+                      height="120"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Korean</a>
+                  </h3>
+                </div>
+              </li>
+
+  
+
+              <li>
+                <a href="courses.html" class="link-card" style="--color: 203, 97%, 75%">
+                  <span class="span">See All Courses</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+
+
+        <section>
+          <div class="containeres">
+            <div class="accordion">
+              <div class="accordion-item" id="question1">
+                <a class="accordion-link" href="#question1">
+                  <div class="flex">
+                    <h3>WHY SHOULD KIDS LEARN A NEW LANGUAGE?</h3>
+                    <ul>
+                      <li>#Figma</li>
+                      <li>#Sketch</li>
+                      <li>#Adobe</li>
+                      <li>#Invision</li>
+                      <li>#Protopie</li>
+                    </ul>
+                  </div>
+                  <i class="icon ion-md-arrow-forward" style="color: black"></i>
+                  <i class="icon ion-md-arrow-down" style="color: black"></i>
+                </a>
+                <div class="answer">
+                  <p>
+                    Besides the usual reasons adults learn a new language
+                    (career opportunities or romance) there are plenty of other
+                    benefits for kids to learn a new language. Improved memory:
+                    Learning a foreign language involves memorizing vocabulary
+                    and grammar, which enhances overall memory function.
+                    According to a study published in the journal
+                    "Neuropsychology," bilingualism has been linked to better
+                    memory performance (Bialystok et al., 2004). Problem-solving
+                    skills: Language learning stimulates critical thinking and
+                    problem-solving abilities. Research published in the journal
+                    "Psychological Science" suggests that bilingual individuals
+                    excel in tasks that require cognitive control and
+                    problem-solving (Green & Abutalebi, 2013). Increased
+                    creativity: Language learners often find creative ways to
+                    express themselves. Studies, such as one published in
+                    "Frontiers in Psychology," have shown that bilingualism is
+                    associated with greater cognitive flexibility and divergent
+                    thinking, key components of creativity (Kharkhurin, 2012).
+                    Learn to overcome obstacles Discipline: Let's face it,
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="accordion-item" id="question2">
+                <a class="accordion-link" href="#question2">
+                  <div class="flex">
+                    <h3>WHY START EARLY?</h3>
+                    <ul>
+                      <li>#Figma</li>
+                      <li>#Sketch</li>
+                      <li>#Adobe</li>
+                      <li>#Invision</li>
+                      <li>#Protopie</li>
+                    </ul>
+                  </div>
+                  <i class="icon ion-md-arrow-forward" style="color: black"></i>
+                  <i class="icon ion-md-arrow-down" style="color: black"></i>
+                </a>
+                <div class="answer">
+                  <p>
+                    Kids get the opportunity to explore, do you (parents) still
+                    remember the foreign language you learnt years ago at school
+                    or at university. Chances are you won't remember much of it.
+                    Starting early gives children to explore their interests
+                    Children are just better at learning stuff Longer time to
+                    learn a language: The usual pathway to study in a university
+                    overseas will be to study a language intensively for 1-2
+                    years after SPM. Starting early gives gives them the
+                    opportunity to learn at a slower pace and enjoy the process
+                    more than just cramming things in your head to pass that
+                    next exam Save costs: Pre university foreign language
+                    courses can be quite heavy for students to bear in a short
+                    space of time. We help reduce these costs greatly and help
+                    parents space out the costs, so it will not feel as much a
+                    burden
+                  </p>
+                </div>
+                <hr />
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" id="feature" aria-label="feature">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="./assets/images/av.jpg"
+                width="582"
+                height="585"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="feature-content">
+              <p class="section-subtitle has-before">Why Learn With Us?</p>
+
+              <h2 class="h2 section-title">
+Learn with the Best<span style="color: #677483; font-size: 30px;">Proven Success and Structured Excellence         </span>
+
+              </h2>
+
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 264, 36%, 50%">
+                      <ion-icon
+                        name="rocket-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Experienced Instructors</h3>
+
+                      <p class="card-text">
+Our tutors are highly experienced language professionals, passionate about sharing their knowledge and guiding your progress
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 343, 98%, 60%">
+                      <ion-icon
+                        name= "git-merge-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Structured Learning</h3>
+
+                      <p class="card-text">
+Our courses align with accredited syllabi, ensuring you gain internationally recognized language proficiency.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 144, 37%, 60%">
+                      <ion-icon
+                        name="sparkles-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Proven Success</h3>
+
+                      <p class="card-text">
+Students consistently rave about our platform and discover how we've helped them achieve their language goals.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+   
+              <section class="section project" id="project" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Tutors</p>
+
+            <h2 class="h2 section-title text-center">
+              Introducing Our Tutors
+            </h2>
+
+            <ul class="filter-list">
+
+
+<button class="filter-btn" data-filter-btn data-language="all">All</button>
+<button class="filter-btn" data-filter-btn data-language="german">German</button>
+<button class="filter-btn" data-filter-btn data-language="french">French</button>
+<button class="filter-btn" data-filter-btn data-language="mandarin">Mandarin</button>
+<button class="filter-btn" data-filter-btn data-language="english">English</button>
+<button class="filter-btn" data-filter-btn data-language="spanish">Spanish</button>
+
+            </ul>
+
+            <ul class="grid-list">
+              <li>  
+              </li>
+
+              <li>
+              </li>
+
+              <li>
+                <div class="project-card french">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/perr-1.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="3d Digital Art"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fransesca</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">French</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card mandarin">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/per9.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Lee</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Mandarin</a>
+                  </div>
+                </div>
+              </li>
+
+<li>
+  <div class="project-card german">
+    <figure class="card-banner img-holder" style="--width: 416; --height: 429">
+      <img src="./assets/images/per-8.png" width="416" height="429" loading="lazy" alt="German Tutor" class="img-cover"/>
+    </figure>
+    <div class="card-content">
+      <h3 class="h3">
+        <a href="#" class="card-title">Mariana</a>
+      </h3>
+      <a href="#" class="card-tag">German</a>
+    </div>
+  </div>
+</li>
+
+
+<li>
+  <div class="project-card french">
+    <figure class="card-banner img-holder" style="--width: 416; --height: 429">
+      <img src="./assets/images/pex1.png" width="416" height="429" loading="lazy" alt="French Tutor" class="img-cover"/>
+    </figure>
+    <div class="card-content">
+      <h3 class="h3">
+        <a href="#" class="card-title">Marie Dubois</a>
+      </h3>
+      <a href="#" class="card-tag">French</a>
+    </div>
+  </div>
+</li>
+
+
+              <li>
+                <div class="project-card spanish">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/per4.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">James</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Spanish</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card english">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/per7.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Mobile App Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Lisa</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">English</a>
+                  </div>
+                </div>
+              </li>
+
+
+
+              
+            </ul>
+          </div>
+        </section>
+
+
+
+        <!-- 
+        - #NEWSLETTER
+      -->
+
+        <section
+          class="section newsletter has-bg-image"
+          aria-label="newsletter"
+          style="background-image: url('./assets/images/newsletter-bg.jpg')"
+        >
+          <div class="container">
+            <figure class="newsletter-banner">
+              <img
+                src="./assets/images/newsletter-banner.png"
+                width="355"
+                height="356"
+                loading="lazy"
+                alt="newsletter banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="newsletter-content">
+              <p class="section-subtitle has-before">Subscribe for Updates</p>
+
+              <h2 class="h2 section-title">
+                Subscribe to Our Newsletter 
+                                <span style="color: #677483">                for the Latest Updates
+</span>
+
+              </h2>
+
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Enter your mail"
+                  required
+                  class="email-field"
+                />
+
+                <button
+                  type="submit"
+                  class="btn btn-secondary has-before has-after"
+                >
+                  <span class="span">Subscribe</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+   
+   
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">Eden Language Centre</p>
+
+            <p class="footer-text">
+At Eden Language Centre, we make learning foreign language simple and enjoyable with our approachable, skilled tutors.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/edenlanguagecentre/" class="social-link" style="--color: 223, 98%, 57%" target="_blank">
+                  <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com" class="social-link" style="--color: 326, 57%, 48%" target="_blank">
+                  <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course!" class="social-link" target="_blank">
+                  <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="courses.html" class="footer-link">Courses</a>
+            </li>
+
+            <li>
+              <a href="blog.html" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="about-us.html" class="footer-link">About Us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Eden Language Centre
+          </p>
+
+
+
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+<!-- WhatsApp Button for a Malaysian number -->
+<a href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course!" class="whatsapp-btn" aria-label="WhatsApp" target="_blank">
+  <ion-icon name="logo-whatsapp"></ion-icon>
+</a>
+
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      document.querySelectorAll(".accordion-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault(); // Prevent the default anchor behavior
+
+          const currentId = link.getAttribute("href");
+          const item = document.querySelector(currentId);
+          const isActive = item.classList.contains("active");
+
+          // Toggle the 'active' class on the current accordion item
+          if (isActive) {
+            item.classList.remove("active");
+          } else {
+            // Remove 'active' class from all accordion items
+            document
+              .querySelectorAll(".accordion-item")
+              .forEach((item) => item.classList.remove("active"));
+            // Add 'active' class to the current item
+            item.classList.add("active");
+          }
+
+          // Adjust the max-height for the answer to show or hide
+          const answer = item.querySelector(".answer");
+          if (isActive) {
+            answer.style.maxHeight = null;
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
         });
+      });
+    </script>
+
+    <script>
+const projectContainer = document.querySelector('.grid-list');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.grid-list > li'); // Select the 'li' elements directly
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const language = button.getAttribute('data-language');
+    
+    projectItems.forEach(item => {
+      // Check if the item should be displayed
+      if (language === 'all' || item.querySelector(`.${language}`)) {
+        item.style.display = ''; // Show the item
+      } else {
+        item.style.display = 'none'; // Hide the item
+      }
     });
+    
+    // Update active button state
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
 });
 
-    </script>
+</script>
 
-        <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            fetch('partials/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
+<script>
+// Get the modal
+var modal = document.getElementById("phonePopup");
 
-            fetch('partials/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                });
-        });
-    </script>
-</body>
+// Get the button that opens the modal
+var btn = document.querySelector(".hero-content .btn-primary");
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("closePopup");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+  </body>
 </html>

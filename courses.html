@@ -1,91 +1,647 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Language Tutors</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixology - Building Digital Product</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
 </head>
-<body>
-    <header id="header"></header>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
 
 
-        <section class=" container mt-5">
-            <h1>Language Tutors</h1>
-            <div class="row">
-                <!-- English Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/uk.jpg" alt="English Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">Spanish</h5>
-                            <p class="card-text">Some description about John Doe.</p>
-                                            <a class="nav-link" href="spain-tutor.html">Tutors</a>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Eden Language Centre</a>
 
-                        </div>
-                    </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Eden Language Centre</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="courses.html" class="navbar-link" data-nav-link
+                >Courses</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="about-us.html" class="navbar-link" data-nav-link
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+
+            <h2 class="h2 section-title text-center">
+              Discover Our Variety of
+              <span style="color: #677483">Foreign Language Courses </span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card" style="--color: 35, 100%, 29%">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div class="card-icon">
+    <img
+      src="./assets/images/ger.png"
+      width="120"
+      height="120"
+      loading="lazy"
+      alt="service icon"
+    />
+  </div>
+</div>
+
+
+                  <h3 class="h3">
+                    <a href="german-roadmap.html" class="card-title">German</a>
+                  </h3>
                 </div>
-                
-                <!-- German Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/german.jpg" alt="German Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">German</h5>
-                            <p class="card-text">Some description about Jane Smith.</p>
-                                                                        <a class="nav-link" href="german-tutor.html">Tutors</a>
+              </li>
+              <li>
+                <div class="service-card" style="--color: 174, 77%, 50%">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div class="card-icon">
+    <img
+      src="./assets/images/fran.png"
+      width="120"
+      height="120"
+      loading="lazy"
+      alt="service icon"
+    />
+  </div>
+</div>
 
-                        </div>
-                    </div>
+                  <h3 class="h3">
+                    <a href="#" class="card-title">French</a>
+                  </h3>
                 </div>
-                
-                <!-- French Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/france.jpg" alt="French Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">French</h5>
-                            <p class="card-text">Some description about Robert Pires.</p>
-                                                                        <a class="nav-link" href="french-tutor.html">Tutors</a>
+              </li>
 
-                        </div>
-                    </div>
+              <li>
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/spai.png"
+                      width="120"
+                      height="120"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Spanish</a>
+                  </h3>
                 </div>
-                <!-- French Tutor -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/korean.jpg" alt="Korean Flag">
-                        <div class="card-body">
-                            <h5 class="card-title">Korean</h5>
-                            <p class="card-text">Some description about Robert Pires.</p>
-                                                                        <a class="nav-link" href="korean-tutor.html">Tutors</a>
+              </li>
 
-                        </div>
-                    </div>
+              <li>
+                <div class="service-card" style="--color: 343, 98%, 60%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/kore.png"
+                      width="120"
+                      height="120"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Korean</a>
+                  </h3>
                 </div>
+              </li>
 
-                <!-- Add more tutor cards as needed -->
-            </div>
+  
+
+
+            </ul>
+          </div>
         </section>
 
-    <footer id="footer"></footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            fetch('partials/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
 
-            fetch('partials/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                });
-        });
-    </script>
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+   
+              <section class="section project" id="project" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Tutors</p>
+
+            <h2 class="h2 section-title text-center">
+              Introducing Our Tutors
+            </h2>
+
+            <ul class="filter-list">
+
+
+<button class="filter-btn" data-filter-btn data-language="all">All</button>
+<button class="filter-btn" data-filter-btn data-language="german">German</button>
+<button class="filter-btn" data-filter-btn data-language="french">French</button>
+<button class="filter-btn" data-filter-btn data-language="mandarin">Mandarin</button>
+<button class="filter-btn" data-filter-btn data-language="english">English</button>
+<button class="filter-btn" data-filter-btn data-language="spanish">Spanish</button>
+
+            </ul>
+
+            <ul class="grid-list">
+              <li>  
+              </li>
+
+              <li>
+              </li>
+
+              <li>
+                <div class="project-card french">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/perr-1.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="3d Digital Art"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fransesca</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">French</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card mandarin">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/per9.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Lee</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Mandarin</a>
+                  </div>
+                </div>
+              </li>
+
+<li>
+  <div class="project-card german">
+    <figure class="card-banner img-holder" style="--width: 416; --height: 429">
+      <img src="./assets/images/per-8.png" width="416" height="429" loading="lazy" alt="German Tutor" class="img-cover"/>
+    </figure>
+    <div class="card-content">
+      <h3 class="h3">
+        <a href="#" class="card-title">Mariana</a>
+      </h3>
+      <a href="#" class="card-tag">German</a>
+    </div>
+  </div>
+</li>
+
+
+<li>
+  <div class="project-card french">
+    <figure class="card-banner img-holder" style="--width: 416; --height: 429">
+      <img src="./assets/images/pex1.png" width="416" height="429" loading="lazy" alt="French Tutor" class="img-cover"/>
+    </figure>
+    <div class="card-content">
+      <h3 class="h3">
+        <a href="#" class="card-title">Marie Dubois</a>
+      </h3>
+      <a href="#" class="card-tag">French</a>
+    </div>
+  </div>
+</li>
+
+
+              <li>
+                <div class="project-card spanish">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/per4.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">James</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Spanish</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card english">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./assets/images/per7.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Mobile App Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Lisa</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">English</a>
+                  </div>
+                </div>
+              </li>
+
+
+
+              
+            </ul>
+          </div>
+        </section>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">Eden Language Centre</p>
+
+            <p class="footer-text">
+At Eden Language Centre, we make learning foreign language simple and enjoyable with our approachable, skilled tutors.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/edenlanguagecentre/" class="social-link" style="--color: 223, 98%, 57%" target="_blank">
+                  <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com" class="social-link" style="--color: 326, 57%, 48%" target="_blank">
+                  <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course!" class="social-link" target="_blank">
+                  <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="courses.html" class="footer-link">Courses</a>
+            </li>
+
+            <li>
+              <a href="blog.html" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="about-us.html" class="footer-link">About Us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./assets/images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Eden Language Centre
+          </p>
+
+
+
+        </div>
+      </div>
+    </footer>
+
+
+
+
+<!-- WhatsApp Button for a Malaysian number -->
+<a href="https://wa.me/60174490672?text=Hello%2C%20I'm%20interested%20in%20your%20language course!" class="whatsapp-btn" aria-label="WhatsApp" target="_blank">
+  <ion-icon name="logo-whatsapp"></ion-icon>
+</a>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+const projectContainer = document.querySelector('.grid-list');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.grid-list > li'); // Select the 'li' elements directly
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const language = button.getAttribute('data-language');
+    
+    projectItems.forEach(item => {
+      // Check if the item should be displayed
+      if (language === 'all' || item.querySelector(`.${language}`)) {
+        item.style.display = ''; // Show the item
+      } else {
+        item.style.display = 'none'; // Hide the item
+      }
+    });
+    
+    // Update active button state
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+</script>
+
 </body>
+
 </html>
